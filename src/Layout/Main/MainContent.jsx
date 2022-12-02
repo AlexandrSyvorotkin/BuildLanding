@@ -4,7 +4,7 @@ import washing from '../../assets/wm.png'
 import boiler from '../../assets/бойлер.jpg'
 import over from '../../assets/духовка.png'
 import gas from '../../assets/колонка.png'
-import Modal from "../modal/Modal";
+import Modal from "../../UI/modal/Modal";
 
 const MainContent = () => {
 
