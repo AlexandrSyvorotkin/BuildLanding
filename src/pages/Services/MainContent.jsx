@@ -8,7 +8,7 @@ import Modal from "../../UI/modal/Modal";
 
 const MainContent = () => {
 
-    const [openModal, setModalOpen] = React.useState(false)
+
 
     return (
         <section>
@@ -37,8 +37,7 @@ const MainContent = () => {
                 <li>Вытяжек</li>
                 <li>Кофемашин</li>
             </ul>
-            <button onClick={() => setModalOpen(true)}>Оставить заявку</button>
-            {openModal && <Modal setModalOpen={setModalOpen}/>}
+
         </section>
     );
 };

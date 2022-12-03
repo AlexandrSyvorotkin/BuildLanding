@@ -13,7 +13,14 @@
 .modal {
     width: 400px;
     height: 600px;
+    padding: 20px 20px;
     background: white;
     opacity: 1;
     z-index: 2;
+}
+
+.modal_title {
+    color: #3a3a3b;
+    display: flex;
+    justify-content: space-between;
 }

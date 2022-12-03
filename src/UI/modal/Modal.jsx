@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './Modal.css'
 import axios from "axios";
 import logo from "../../components/Logo/Logo";
+import {HiOutlineXCircle} from "react-icons/hi2";
 
 const Modal = ({ setModalOpen }) => {
 
@@ -34,13 +35,19 @@ const Modal = ({ setModalOpen }) => {
     return (
         <div className='backdrop' onClick={() => setModalOpen(false)}>
             <div className='modal' onClick={e => e.stopPropagation()}>
-                <form >
-                    <label htmlFor="">Введите ваше имя</label>
-                        <input type="text" value={name} onChange={(e) => setName(e.target.value)}/>
-                    <label htmlFor="">Введите ваш номер</label>
-                        <input type="number" value={number} onChange={(e) => setNumber(e.target.value)}/>
-                    <button onClick={submit} >Отправить</button>
-                </form>
+                <div className="modal_title">
+                    <span>
+                        Заказать звонок
+                    </span>
+                    <HiOutlineXCircle size={30} onClick={() => setModalOpen(false)} style={{cursor: 'pointer'}}/>
+                </div>
+                {/*<form >*/}
+                {/*    <label htmlFor="">Введите ваше имя</label>*/}
+                {/*        <input type="text" value={name} onChange={(e) => setName(e.target.value)}/>*/}
+                {/*    <label htmlFor="">Введите ваш номер</label>*/}
+                {/*        <input type="number" value={number} onChange={(e) => setNumber(e.target.value)}/>*/}
+                {/*    <button onClick={submit} >Отправить</button>*/}
+                {/*</form>*/}
             </div>
         </div>
     );
