@@ -1,0 +1,48 @@
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0.5;
+}
+
+.btn span {
+    position: absolute;
+    display: block;
+}
+
+.btn :nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+.btn:hover :nth-child(1) {
+    left: 100%;
+    transition-delay: 1s;
+}
+
+.btn span:nth-child(2) {
+
+}
+
+.btn span:nth-child(3) {
+
+}
+
+.btn span:nth-child(4) {
+
+}

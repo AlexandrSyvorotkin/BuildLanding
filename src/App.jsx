@@ -1,13 +1,13 @@
 import './App.css';
 import Layout from "./Layout/Layout";
-import MainContent from "./Layout/Main/MainContent";
 import {Route, Routes} from "react-router";
-import Guarantees from "./pages/Guarantees/Guarantees";
 import Prices from "./pages/Prices/Prices";
 import Reviews from "./pages/Reviews/Reviews";
 import Contacts from "./pages/Сontacts/Contacts";
 import {Link, NavLink} from "react-router-dom";
 import Routing from "./components/Controls/Routing";
+import Description from "./pages/Description/Description";
+import MainContent from "./pages/Services/MainContent";
 
 const links = [
     {id: 1, title: 'Онас', path: '/about', text: '&nbsp;Онас'},
@@ -18,8 +18,8 @@ const links = [
 ]
 
 const routes = [
-    {id: '1', path: '/about', element: <MainContent/>},
-    {id: '2', path: '/guarantees', element: <Guarantees/>},
+    {id: '1', path: '/about', element: <Description/>},
+    {id: '2', path: '/services', element: <MainContent/>},
     {id: '3', path: '/prices', element: <Prices/>},
     {id: '4', path: '/reviews', element: <Reviews/>},
     {id: '5', path: '/contacts', element: <Contacts/>},
