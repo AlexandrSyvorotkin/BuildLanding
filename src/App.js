@@ -7,6 +7,7 @@ import Prices from "./pages/Prices/Prices";
 import Reviews from "./pages/Reviews/Reviews";
 import Contacts from "./pages/Сontacts/Contacts";
 import {Link, NavLink} from "react-router-dom";
+import Routing from "./components/Controls/Routing";
 
 const links = [
     {id: 1, title: 'Онас', path: '/about', text: '&nbsp;Онас'},
@@ -26,26 +27,7 @@ const routes = [
 
 const App = () => (
     <Layout>
-        <div className='routes'>
-            <ul>
-                <li>
-                    <NavLink data-text='&nbsp;Онас' to='/about'>&nbsp;Онас&nbsp;</NavLink>
-                </li>
-                <li>
-                    <NavLink data-text='&nbsp;Гарантии' to='/guarantees'>&nbsp;Гарантии&nbsp;</NavLink>
-                </li>
-                <li>
-                    <NavLink data-text='&nbsp;Цены' to='/prices'>&nbsp;Цены&nbsp;</NavLink>
-                </li>
-                <li>
-                    <NavLink data-text='&nbsp;Отызы' to='/reviews'>&nbsp;Отызы&nbsp;</NavLink>
-                </li>
-                <li>
-                    <NavLink data-text='&nbsp;Контакты' to='/contacts'>&nbsp;Контакты&nbsp;</NavLink>
-                </li>
-                {/*{links.map(link => <li key={link.id}><Link data-text='&nbsp;Контакты' to={link.path}>&nbsp;{link.title}&nbsp;</Link></li>)}*/}
-            </ul>
-        </div>
+        <Routing/>
         <Routes>
             {routes.map(route => {
                 return (

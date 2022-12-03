@@ -1,12 +1,17 @@
+@import-normalize;
+
 .App {
   text-align: center;
 
 }
 
 :root {
-    --color-routes: #A8F9FF
+    --main-color: #A8F9FF
 }
 
+ul {
+  margin: 0;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -33,45 +38,7 @@
   color: #61dafb;
 }
 
-.routes ul {
-    display: flex;
-    justify-content: space-between;
-    gap: 0 20px;
-}
 
-.routes ul li {
-    list-style: none;
-}
-
-.routes ul li a {
-    position: relative;
-    text-decoration: none;
-    color: transparent;
-    -webkit-text-stroke: 1px rgba(23, 22, 22, 0.5);
-    font-size: 20px;
-}
-
-.routes ul li a::before {
-    content: attr(data-text);
-    position: absolute;
-    color: var(--color-routes);
-    width: 0;
-    overflow: hidden;
-    transition: 0.5s;
-    -webkit-text-stroke: 1px var(--color-routes);
-}
-
-.routes ul li a:hover::before {
-    border-right: 4px solid var(--color-routes);
-    width: 100%;
-    -webkit-text-stroke: 1px var(--color-routes);
-    filter: drop-shadow(0 0 25px var(--color-routes));
-}
-
-.active {
-    color: var(--color-routes) !important;
-    border-bottom: 5px solid var(--color-routes);
-}
 
 @keyframes App-logo-spin {
   from {

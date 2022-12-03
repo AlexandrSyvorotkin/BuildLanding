@@ -1,0 +1,42 @@
+.routes ul {
+    display: flex;
+    justify-content: space-between;
+    /*background-color: #3f434c;*/
+    padding: 20px;
+}
+
+.routes ul li {
+    list-style: none;
+}
+
+.routes ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #343131;
+    /*color: transparent;*/
+    -webkit-text-stroke: 1px rgba(246, 242, 242, 0.5);
+    font-size: 25px;
+}
+
+.routes ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--main-color);
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--main-color);
+}
+
+.routes ul li a:hover::before {
+    border-right: 4px solid var(--main-color);
+    width: 100%;
+    -webkit-text-stroke: 1px var(--main-color);
+    filter: drop-shadow(0 0 25px var(--main-color));
+}
+
+.active {
+    color: var(--main-color) !important;
+    border-bottom: 3px solid var(--main-color);
+    padding-bottom: 2px;
+}
