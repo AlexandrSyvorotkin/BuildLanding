@@ -8,7 +8,7 @@ import Modal from "../../UI/modal/Modal";
 
 const MainContent = () => {
 
-    const [openModal, setModalOpen] = React.useState(false)
+    const [openModal, setModalOpen] = React.useState(true)
 
     return (
         <section>
