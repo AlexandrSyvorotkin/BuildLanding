@@ -10,7 +10,7 @@ const Routing = () => {
 					<NavLink data-text='&nbsp;О&nbsp;нас' to='/about'>&nbsp;О&nbsp;нас&nbsp;</NavLink>
 				</li>
 				<li>
-					<NavLink data-text='&nbsp;Гарантии' to='/services'>&nbsp;Гарантии&nbsp;</NavLink>
+					<NavLink data-text='&nbsp;Услуги' to='/services'>&nbsp;Услуги&nbsp;</NavLink>
 				</li>
 				<li>
 					<NavLink data-text='&nbsp;Цены' to='/prices'>&nbsp;Цены&nbsp;</NavLink>

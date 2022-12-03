@@ -14,7 +14,7 @@
     color: #255784;
     background: var(--main-color);
     box-shadow: 0 0 10px var(--main-color), 0 0 40px var(--main-color), 0 0 80px var(--main-color);
-    transition-delay: 0.5;
+    /*transition-delay: 0.3s;*/
 }
 
 .btn span {
