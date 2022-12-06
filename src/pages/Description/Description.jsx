@@ -2,6 +2,7 @@ import React from 'react';
 import './Description.css'
 import RequestButton from "../../UI/RequestButton/RequestButton";
 import Modal from "../../UI/modal/Modal";
+import WorkScheme from "../../components/WorkScheme/WorkScheme";
 
 const Description = () => {
 
@@ -18,6 +19,7 @@ const Description = () => {
             <div onClick={() => setModalOpen(true)} className="btn_request">
                 <RequestButton title='Оставить заявку'/>
             </div>
+            <WorkScheme/>
             {openModal && <Modal setModalOpen={setModalOpen}/>}
         </div>
     );

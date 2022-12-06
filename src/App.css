@@ -6,7 +6,13 @@
 }
 
 :root {
-    --main-color: #A8F9FF
+    --main-color: #A8F9FF;
+
+    --bg-color: #0B0C10;
+    --secondary: #1F2833;
+    --font-color: #C5C6C7;
+    --font-seconsary: #66FC1;
+    --alternative: #45A29E;
 }
 
 ul {
