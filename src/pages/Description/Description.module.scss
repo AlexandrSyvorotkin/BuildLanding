@@ -1,0 +1,34 @@
+.description {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  .title {
+	margin-top: 20px;
+	font-size: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+  }
+  .before {
+	font-size: 60px;
+	color: var(--main-color);
+  }
+  
+  .subtitle {
+	margin-top: 10px;
+	font-size: 30px;
+  }
+  
+  .btn_request {
+	margin-top: 40px;
+  }
+  .descr {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	&>ul {
+	  padding-left: 0;
+	}
+  }
+}
+
+

@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
-import './Modal.css'
+import styles from './Modal.module.scss'
 import axios from "axios";
 import logo from "../../components/Logo/Logo";
 import {HiOutlineXCircle} from "react-icons/hi2";
+import {useForm} from "react-hook-form";
 
 const Modal = ({ setModalOpen }) => {
 
@@ -31,23 +32,38 @@ const Modal = ({ setModalOpen }) => {
 
     }
 
+    const {
+        register,
+        formState: {
+            errors
+        },
+        handleSubmit
+    } = useForm()
+
+    const onSubmit = (data) => {
+        alert(JSON.stringify(data))
+    }
 
     return (
-        <div className='backdrop' onClick={() => setModalOpen(false)}>
-            <div className='modal' onClick={e => e.stopPropagation()}>
-                <div className="modal_title">
+        <div className={styles.backdrop} onClick={() => setModalOpen(false)}>
+            <div className={styles.modal} onClick={e => e.stopPropagation()}>
+                <div className={styles.modal_title}>
                     <span>
                         Заказать звонок
                     </span>
                     <HiOutlineXCircle size={30} onClick={() => setModalOpen(false)} style={{cursor: 'pointer'}}/>
                 </div>
-                {/*<form >*/}
-                {/*    <label htmlFor="">Введите ваше имя</label>*/}
-                {/*        <input type="text" value={name} onChange={(e) => setName(e.target.value)}/>*/}
-                {/*    <label htmlFor="">Введите ваш номер</label>*/}
-                {/*        <input type="number" value={number} onChange={(e) => setNumber(e.target.value)}/>*/}
-                {/*    <button onClick={submit} >Отправить</button>*/}
-                {/*</form>*/}
+                <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
+                    <label className={styles.label}>
+                        Введите ваше имя
+                        <input type="text"/>
+                    </label>
+                    <label className={styles.label}>
+                        Введите ваш номер телефона
+                        <input type="text"/>
+                    </label>
+                    <input type="submit"/>
+                </form>
             </div>
         </div>
     );

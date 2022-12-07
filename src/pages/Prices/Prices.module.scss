@@ -1,0 +1,18 @@
+.prices {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  .price {
+	min-width: 400px;
+	height: 100px;
+	border: 1px solid var(--secondary);
+	padding: 10px;
+  }
+  .header {
+	display: flex;
+	justify-content: space-between;
+  }
+}

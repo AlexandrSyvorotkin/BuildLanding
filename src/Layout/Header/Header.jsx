@@ -8,7 +8,7 @@ const Header = () => {
         <header className={styles.header}>
             <div className={styles.content}>
                 <Logo/>
-                <div className="location">Москва и МО</div>
+                <div className={styles.location}>Москва и МО</div>
                 <PhoneNumber type='header'/>
             </div>
 

@@ -10,5 +10,11 @@
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+  }
+  .location {
+	padding: 10px 30px;
+	border: 1px solid var(--alternative);
+	border-radius: 10px;
   }
 }
