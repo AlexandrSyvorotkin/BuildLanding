@@ -1,14 +1,17 @@
 import React from 'react';
-import './Header.css'
+import styles from './Header.module.scss'
 import PhoneNumber from "../../components/PhoneNumber/PhoneNumber";
 import Logo from "../../components/Logo/Logo";
 
 const Header = () => {
     return (
-        <header className='header'>
-            <Logo/>
-            <div className="location">Москва и МО</div>
-            <PhoneNumber type='header'/>
+        <header className={styles.header}>
+            <div className={styles.content}>
+                <Logo/>
+                <div className="location">Москва и МО</div>
+                <PhoneNumber type='header'/>
+            </div>
+
         </header>
     );
 };
