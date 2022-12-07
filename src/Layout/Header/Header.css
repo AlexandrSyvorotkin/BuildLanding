@@ -1,5 +1,5 @@
 .header {
-    border-bottom: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--alternative);
     display: flex;
     justify-content: space-between;
     gap: 100px;

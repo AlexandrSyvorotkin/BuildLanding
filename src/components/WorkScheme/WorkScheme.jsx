@@ -55,15 +55,27 @@ const workScheme = [
 
 const WorkScheme = () => {
     return (
-        <section className={styles.work_scheme}>
-            {workScheme.map(step =>
-                <div key={step.id} className={styles.wrapper}>
-                    <div className={styles.number}>{step.number}</div>
-                    <div>
-                        <img src={step.img} alt=""/>
+        <section>
+            <div className={styles.heading}>
+                <span>Схема работы</span>
+            </div>
+            <div className={styles.work_scheme}>
+                {workScheme.map(step =>
+                    <div key={step.id} className={styles.wrapper}>
+                        <div className={styles.header}>
+                            <div className={styles.number}>{step.number}</div>
+                            <div className={styles.title}>
+                                <span>{step.title}</span>
+                            </div>
+                        </div>
+                        <div className={styles.content}>
+                            <img src={step.img} alt=""/>
+                            <p>{step.description}</p>
+                        </div>
+
                     </div>
-                </div>
-            )}
+                )}
+            </div>
         </section>
     );
 };

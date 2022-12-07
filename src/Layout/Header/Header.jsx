@@ -6,10 +6,9 @@ import Logo from "../../components/Logo/Logo";
 const Header = () => {
     return (
         <header className='header'>
-
             <Logo/>
             <div className="location">Москва и МО</div>
-            <PhoneNumber/>
+            <PhoneNumber type='header'/>
         </header>
     );
 };

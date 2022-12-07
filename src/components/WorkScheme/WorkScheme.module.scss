@@ -1,11 +1,36 @@
 .work_scheme {
   margin-top: 50px;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+ 
   .wrapper {
-	width: 200px;
-	height: 200px;
+	padding: 20px;
+	width: 320px;
+	border: 1px solid var(--alternative);
+  }
+  .header {
+	display: flex;
+	gap: 10px;
+	align-items: center;
   }
   .number {
 	font-size: 40px;
   }
+  .title {
+	font-weight: bold;
+  }
+  .content {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+  }
+}
+
+.heading {
+  text-align: center;
+  font-size: 30px;
 }
