@@ -3,6 +3,7 @@ import styles from './Description.module.scss'
 import RequestButton from "../../UI/RequestButton/RequestButton";
 import Modal from "../../UI/modal/Modal";
 import WorkScheme from "../../components/WorkScheme/WorkScheme";
+import Faq from "../../components/Faq/Faq";
 
 const Description = () => {
 
@@ -29,6 +30,7 @@ const Description = () => {
                 <RequestButton title='Оставить заявку'/>
             </div>
             <WorkScheme/>
+            <Faq/>
             {openModal && <Modal setModalOpen={setModalOpen}/>}
         </div>
     );
